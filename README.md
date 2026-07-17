@@ -25,11 +25,12 @@ Python, Pandas, PostgreSQL (Supabase), SQLAlchemy, Matplotlib, Jupyter Notebook
 
 1. Clone the repo and install dependencies:
    ```bash
-   pip install pandas sqlalchemy psycopg2-binary matplotlib jupyter
+   pip install pandas sqlalchemy psycopg2-binary matplotlib jupyter python-dotenv
    ```
 2. Create a Supabase project (or any Postgres instance) and grab the connection string from **Project Settings -> Database**.
-3. Open `Customer_Shopping_Behavior_Analysis.ipynb`, paste your connection string into the `SUPABASE_DB_URL` variable, and run all cells.
-4. Or run the SQL directly against your loaded `customer` table using `customer_behavior_sql_queries.sql`.
+3. Create a `.env` file in the project root (see `.env.example`) with your connection string in `SUPABASE_DB_URL`.
+4. Open `Customer_Shopping_Behavior_Analysis.ipynb` and run all cells.
+5. Or run the SQL directly against your loaded `customer` table using `customer_behavior_sql_queries.sql`.
 
 ## Key Findings
 
@@ -41,4 +42,4 @@ Python, Pandas, PostgreSQL (Supabase), SQLAlchemy, Matplotlib, Jupyter Notebook
 
 ## Credit
 
-Dataset and initial project framework adapted from Amlan Mohanty's [customer-trends-data-analysis-SQL-Python-PowerBI](https://github.com/amlanmohanty1/customer-trends-data-analysis-SQL-Python-PowerBI) (MIT License). Data cleaning logic, SQL query set (2 new queries added), visualizations, and findings write-up are my own.
+Dataset and starting project structure adapted from a public MIT-licensed template ([source](https://github.com/amlanmohanty1/customer-trends-data-analysis-SQL-Python-PowerBI)); cleaning logic, SQL queries, visualizations, and findings are my own.
